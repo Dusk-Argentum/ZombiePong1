@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\eahscs\Desktop\ZombiePong\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2016-03-03T10:50:55.4668-05:00</Time>
+      <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2016-03-11T10:23:39.3-05:00</Time>
     </Item>
     <Item>
       <Source>spritesheet.png</Source>
@@ -16,8 +16,20 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\eahscs\Desktop\ZombiePong\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\spritesheet.xnb</Output>
-      <Time>2016-03-03T10:50:55.5028-05:00</Time>
+      <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\spritesheet.xnb</Output>
+      <Time>2016-03-11T10:23:39.344-05:00</Time>
+    </Item>
+    <Item>
+      <Source>scribblesheet.png</Source>
+      <Name>scribblesheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyEnabled">False</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\scribblesheet.xnb</Output>
+      <Time>2016-03-11T10:46:21.68-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -25,10 +37,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\eahscs\Desktop\ZombiePong\ZombiePong\ZombiePong\ZombiePongContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\eahscs\Desktop\ZombiePong\ZombiePong\ZombiePong\ZombiePong\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\eahscs\Desktop\ZombiePong\ZombiePong\ZombiePong\ZombiePongContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\eahscs\Desktop\ZombiePong\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePongContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePongContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -18,7 +18,7 @@ namespace ZombiePong
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D background, spritesheet;
+        Texture2D background, spritesheet, scribblesheet;
 
         Sprite paddle1, paddle2, ball;
 
@@ -58,11 +58,17 @@ namespace ZombiePong
 
             background = Content.Load<Texture2D>("background");
             spritesheet = Content.Load<Texture2D>("spritesheet");
+            scribblesheet = Content.Load<Texture2D>("scribblesheet");
 
             paddle1 = new Sprite(new Vector2(20, 20), spritesheet, new Rectangle(0, 516, 25, 150), Vector2.Zero);
             paddle2 = new Sprite(new Vector2(970, 20), spritesheet, new Rectangle(32, 516, 25, 150), Vector2.Zero);
-            ball = new Sprite(new Vector2(700, 350), spritesheet, new Rectangle(76, 510, 40, 40), new Vector2(70, 0));
-
+            ball = new Sprite(new Vector2(400, 350), scribblesheet, new Rectangle(0, 0, 30, 30), new Vector2(120, 0));
+           
+            for (int i = 1; i < 5; i++)
+            {
+                ball.AddFrame(new Rectangle(ball.BoundingBoxRect.Width * i, 0, ball.BoundingBoxRect.Width, ball.BoundingBoxRect.Height));
+            }
+            
             MouseState ms = Mouse.GetState();
             paddle1.Location = new Vector2(paddle1.Location.X, ms.Y);
 
