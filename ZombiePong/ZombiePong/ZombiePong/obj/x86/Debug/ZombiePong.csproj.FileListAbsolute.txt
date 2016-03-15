@@ -15,3 +15,4 @@ C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Deb
 C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\scribblesheet.xnb
 C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\ZombiePong.exe
 C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\ZombiePong.pdb
+C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\Paddle.xnb

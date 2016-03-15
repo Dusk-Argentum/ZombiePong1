@@ -108,7 +108,14 @@ namespace ZombiePong
                 this.Exit();
 
             // TODO: Add your update logic here
+
+
+
+
+            //ball update method
             ball.Update(gameTime);
+
+
 
             for (int i = 0; i < zombies.Count; i++)
             {
@@ -121,12 +128,13 @@ namespace ZombiePong
             paddle1.Location = new Vector2(paddle1.Location.X, ms.Y);
             paddle2.Location = new Vector2(paddle2.Location.X, ball.Center.Y);
 
-            if (ball.Location.X > 950 - 16)
+            if (ball.Location.X > 1050 - 16)
                 ball.Velocity = ball.Velocity * new Vector2(-1, 1);
 
             base.Update(gameTime);
-        }
 
+        }
+        
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
