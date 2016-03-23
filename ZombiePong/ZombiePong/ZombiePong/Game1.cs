@@ -21,6 +21,8 @@ namespace ZombiePong
         Texture2D background, spritesheet, scribblesheet;
         Random rand = new Random(System.Environment.TickCount);
 
+        Song song;
+
         Sprite paddle1, paddle2, ball;
 
         int playerScore = 0;
@@ -79,6 +81,10 @@ namespace ZombiePong
 
             SpawnZombie(new Vector2(400, 400), new Vector2(-40, 0));
 
+            song = Content.Load<Song>(@"Sound\PictoChat_-_Super_Smash_Bros");
+
+            MediaPlayer.Play(song);
+
             
 
             for (int i = 1; i < 5; i++)
@@ -135,8 +141,7 @@ namespace ZombiePong
             {
                 zombies[i].Update(gameTime);
               
-                Vector2 location = new Vector2(rand.Next(150, 700), rand.Next(100, 540));
-                Vector2 velocity = new Vector2(40, 0);
+
 
                 // Zombie logic goes here..
                 zombies[i].FlipHorizontal = false;
@@ -152,9 +157,11 @@ namespace ZombiePong
                 }
 
 
-
-                if (zombies[i].IsBoxColliding(ball.BoundingBoxRect))
+                zombies[i].CollisionRadius = 40;
+                if (zombies[i].IsCircleColliding(ball.Center, 10))
                 {
+                    zombies.RemoveAt(i);
+                    ball.Velocity *= -1;
                    
                     if (ball.Velocity.X < -10)
                         AIScore += 1;
@@ -165,9 +172,13 @@ namespace ZombiePong
                     UpdateScore();
                     for (int zam = 0; i < 5; i++)
                     {
-                        SpawnZombie(location, velocity);
-                        if (zombies.Count >= 4)
-                            zombies.RemoveAt(zam);
+                        Vector2 location = new Vector2(rand.Next(150, 700), rand.Next(100, 540));
+                        Vector2 velocity = new Vector2(40, 0);
+
+                        if (zombies.Count < 10)
+                            SpawnZombie(location, velocity);
+                        //if (zombies.Count >= 4)
+                        //    zombies.RemoveAt(zam);
                     }
 
 
