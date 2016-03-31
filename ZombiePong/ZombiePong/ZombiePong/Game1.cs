@@ -18,7 +18,7 @@ namespace ZombiePong
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D background, spritesheet, scribblesheet;
+        Texture2D background, spritesheet, scribblesheet1, paddleSheet;
         Random rand = new Random(System.Environment.TickCount);
 
         Song song;
@@ -73,11 +73,17 @@ namespace ZombiePong
 
             background = Content.Load<Texture2D>("background");
             spritesheet = Content.Load<Texture2D>("spritesheet");
-            scribblesheet = Content.Load<Texture2D>("scribblesheet");
+            scribblesheet1 = Content.Load<Texture2D>("scribblesheet1");
+            paddleSheet = Content.Load<Texture2D>("paddle1");
 
-            paddle1 = new Sprite(new Vector2(20, 20), spritesheet, new Rectangle(0, 516, 25, 150), Vector2.Zero);
+            paddle1 = new Sprite(new Vector2(20, 20), paddleSheet, new Rectangle(0, 0, 25, 150), Vector2.Zero);
             paddle2 = new Sprite(new Vector2(970, 20), spritesheet, new Rectangle(32, 516, 25, 150), Vector2.Zero);
-            ball = new Sprite(new Vector2(400, 350), scribblesheet, new Rectangle(0, 0, 30, 30), new Vector2(120, 0));
+            ball = new Sprite(new Vector2(400, 350), scribblesheet1, new Rectangle(0, 0, 30, 30), new Vector2(120, 0));
+
+            for (int i = 1; i < 5; i++)
+            {
+                paddle1.AddFrame(new Rectangle(25 * i, 0, 25, 150));
+            }
 
             SpawnZombie(new Vector2(400, 400), new Vector2(-40, 0));
 
@@ -135,6 +141,7 @@ namespace ZombiePong
             MediaPlayer.IsRepeating = true;
 
             ball.Update(gameTime);
+            paddle1.Update(gameTime);
             paddle2.Update(gameTime);
 
             for (int i = zombies.Count - 1; i >= 0; i--)

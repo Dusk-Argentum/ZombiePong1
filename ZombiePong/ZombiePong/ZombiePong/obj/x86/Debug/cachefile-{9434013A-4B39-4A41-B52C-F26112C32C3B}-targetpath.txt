@@ -4,3 +4,5 @@ Content\scribblesheet.xnb
 Content\Paddle.xnb
 Content\Sound\PictoChat_-_Super_Smash_Bros.xnb
 Content\Sound\PictoChat_-_Super_Smash_Bros.wma
+Content\scribblesheet1.xnb
+Content\Paddle1.xnb

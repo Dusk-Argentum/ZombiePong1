@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2016-03-23T10:19:44.4408-04:00</Time>
+      <Time>2016-03-31T10:22:13.4542-04:00</Time>
     </Item>
     <Item>
       <Source>spritesheet.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\spritesheet.xnb</Output>
-      <Time>2016-03-23T10:19:44.4478-04:00</Time>
+      <Time>2016-03-31T11:30:12.4872-04:00</Time>
     </Item>
     <Item>
       <Source>scribblesheet.png</Source>
@@ -29,7 +29,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\scribblesheet.xnb</Output>
-      <Time>2016-03-23T10:19:44.4438-04:00</Time>
+      <Time>2016-03-31T10:22:13.4702-04:00</Time>
     </Item>
     <Item>
       <Source>Paddle.png</Source>
@@ -38,7 +38,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\Paddle.xnb</Output>
-      <Time>2016-03-23T10:19:44.4398-04:00</Time>
+      <Time>2016-03-31T10:22:13.1392-04:00</Time>
     </Item>
     <Item>
       <Source>Sound\PictoChat_-_Super_Smash_Bros.wav</Source>
@@ -48,7 +48,25 @@
       <Options>None</Options>
       <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\Sound\PictoChat_-_Super_Smash_Bros.xnb</Output>
       <Extra>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\Sound\PictoChat_-_Super_Smash_Bros.wma</Extra>
-      <Time>2016-03-23T11:15:25.9278-04:00</Time>
+      <Time>2016-03-31T10:22:13.4502-04:00</Time>
+    </Item>
+    <Item>
+      <Source>scribblesheet1.png</Source>
+      <Name>scribblesheet1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\scribblesheet1.xnb</Output>
+      <Time>2016-03-31T10:37:54.8212-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Paddle1.png</Source>
+      <Name>Paddle1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\eahscs\Desktop\ZombiePong1\ZombiePong\ZombiePong\ZombiePong\bin\x86\Debug\Content\Paddle1.xnb</Output>
+      <Time>2016-03-31T11:03:58.3222-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
